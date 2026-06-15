@@ -8,6 +8,48 @@ export type JournalEntry = {
 
 export const journalEntries: JournalEntry[] = [
   {
+    id: "day-18-github-projects",
+    date: "Day 18",
+    title: "GitHub Repository Projects: Arduino, Sensors & Web",
+    category: "Projects",
+    content: `
+## My GitHub Repositories
+
+A collection of hands-on projects published on [GitHub](https://github.com/sobinbmathew94-beep), spanning Arduino actuators, sensor interfacing, and web development.
+
+### LEDs & Lighting
+- **[neopixel-strip8](https://github.com/sobinbmathew94-beep/neopixel-strip8)** — Controlling an 8-LED NeoPixel strip.
+- **[neopixel-strip4](https://github.com/sobinbmathew94-beep/neopixel-strip4)** — Controlling a 4-LED NeoPixel strip.
+- **[neopixel-LED](https://github.com/sobinbmathew94-beep/neopixel-LED)** — Single addressable NeoPixel LED control.
+- **[RGB-led](https://github.com/sobinbmathew94-beep/RGB-led)** — Mixing colors with an RGB LED.
+- **[LED](https://github.com/sobinbmathew94-beep/LED)** — Basic LED blink and control.
+
+### Actuators & Outputs
+- **[DC-gear-motor](https://github.com/sobinbmathew94-beep/DC-gear-motor)** — Driving a DC gear motor.
+- **[DC-motor](https://github.com/sobinbmathew94-beep/DC-motor)** — Basic DC motor control.
+- **[servo-motor](https://github.com/sobinbmathew94-beep/servo-motor)** — Positioning a servo motor.
+- **[relay](https://github.com/sobinbmathew94-beep/relay)** — Switching loads with a relay module.
+- **[buzzer](https://github.com/sobinbmathew94-beep/buzzer)** — Generating tones with a buzzer.
+
+### Sensors & Inputs
+- **[ultra-sonic-sensor](https://github.com/sobinbmathew94-beep/ultra-sonic-sensor)** — Distance measurement with an ultrasonic sensor.
+- **[PIR-motion-sensor](https://github.com/sobinbmathew94-beep/PIR-motion-sensor)** — Detecting motion with a PIR sensor.
+- **[IR-sensor](https://github.com/sobinbmathew94-beep/IR-sensor)** — Object/line detection with an IR sensor.
+- **[MQ2-gas-sensor](https://github.com/sobinbmathew94-beep/MQ2-gas-sensor)** — Gas and smoke detection with the MQ2 sensor.
+- **[soil-moisture-sensor](https://github.com/sobinbmathew94-beep/soil-moisture-sensor)** — Measuring soil moisture levels.
+- **[light-sensor](https://github.com/sobinbmathew94-beep/light-sensor)** — Reading ambient light (LDR).
+- **[push-button-sensor](https://github.com/sobinbmathew94-beep/push-button-sensor)** — Reading digital input from a push button.
+- **[potentiometer-sensor](https://github.com/sobinbmathew94-beep/potentiometer-sensor)** — Reading analog input from a potentiometer.
+
+### Integrated Projects
+- **[arduino-smart-temperature-controlled-fan-system](https://github.com/sobinbmathew94-beep/arduino-smart-temperature-controlled-fan-system)** — A smart fan that automatically responds to temperature.
+
+### Web Development
+- **[portfolio](https://github.com/sobinbmathew94-beep/portfolio)** — Personal portfolio site (HTML).
+- **[calculator](https://github.com/sobinbmathew94-beep/calculator)** — A simple calculator app built with HTML, CSS, and JavaScript.
+`
+  },
+  {
     id: "day-6-task-1",
     date: "Day 6",
     title: "Task 1: Product with IoT (Real-Life Problem Solving)",
