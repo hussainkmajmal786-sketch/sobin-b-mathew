@@ -26,7 +26,7 @@ export function JournalEntryViewer({ entry }: { entry: JournalEntry }) {
         </div>
       </div>
 
-      <div className="prose prose-invert prose-lg max-w-none prose-headings:tracking-tight prose-headings:text-foreground prose-p:text-silver/80 prose-li:text-silver/80 prose-strong:text-foreground">
+      <div className="prose dark:prose-invert prose-lg max-w-none prose-headings:tracking-tight prose-headings:text-foreground prose-p:text-silver prose-li:text-silver prose-strong:text-foreground prose-a:text-primary">
         <ReactMarkdown>{entry.content}</ReactMarkdown>
       </div>
     </motion.div>
