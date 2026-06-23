@@ -441,5 +441,160 @@ All the hands-on code lives on my GitHub: [github.com/sobinbmathew94-beep](https
 
 Twenty repositories published, spanning sensors, actuators, lighting, an integrated fan system, and a web build — all under version control on GitHub.
 `
+  },
+  {
+    id: "day-19",
+    date: "Day 19",
+    title: "Sensors & Actuators — In Depth",
+    category: "Sensors & Actuators",
+    content: `
+**Phase 03 · Practical Lab**
+
+Moved past basic readings into how sensors really behave — analog vs. digital output, signal conditioning, and why calibration matters. A raw value is only as good as the mapping behind it.
+
+## Sensor Types
+| Sensor | Type | Reads |
+|--------|------|-------|
+| TMP36 / LM35 | Analog | Temperature (°C) |
+| DHT11 | Digital | Temp + humidity |
+| HC-SR04 | Digital (timing) | Distance via echo |
+| LDR | Analog | Ambient light |
+| MQ-series | Analog | Gas concentration |
+
+## Calibration & Interfacing
+Sensors drift and vary unit-to-unit. Take a known reference, record the raw value, and use \`map()\` or a linear fit to convert raw → real units. Add averaging to smooth out noise.
+
+## Driving Larger Loads
+Covered safe ways to drive bigger loads: transistors / MOSFETs for motors, relays for mains devices, flyback diodes to protect against inductive spikes, and PWM for smooth speed / brightness control.
+`
+  },
+  {
+    id: "day-20",
+    date: "Day 20",
+    title: "Self-Study & Revision",
+    category: "Revision",
+    content: `
+**Phase 03 · Independent Learning**
+
+A dedicated day to revise everything from the programme — circuits and digital logic, embedded systems, networking & cloud, and the full Arduino toolkit — and to tidy up documentation across all 20 GitHub projects.
+
+## Revision Checklist
+- **Electronics:** Ohm's law, KCL/KVL, rectifiers, Boolean algebra & K-maps.
+- **Embedded:** MCU architecture, GPIO, ADC, timers, UART / SPI / I²C.
+- **Networking & Cloud:** OSI, TCP/IP, MQTT, AWS basics, Docker, Packet Tracer.
+- **Arduino:** Sketch structure, sensors, actuators, LCD, the 20 builds.
+
+A good README turns a project into a portfolio piece — what it does, the wiring, the components, and how to run it.
+`
+  },
+  {
+    id: "day-21",
+    date: "Day 21",
+    title: "Case Study — Societal Problems & IoT Solutions",
+    category: "Case Study",
+    content: `
+**Phase 03 · Applied Project**
+
+The capstone of the phase — pick a genuine societal problem and design an IoT solution end to end. The goal isn't just a working circuit, but tech that actually improves lives.
+
+## Problem → Solution
+| Problem | IoT Solution |
+|---------|--------------|
+| Water scarcity | Smart tank + pump control to cut waste |
+| Road accidents | Smart traffic & adaptive street lighting |
+| Industrial hazards | Gas / flame / safety alert monitoring |
+| Elderly care | Wearable health + emergency SOS alerts |
+| Energy waste | Smart energy & dusk-to-dawn lighting |
+
+Almost every one of the 20 builds maps back to a real societal need — the case study tied them together into the bigger picture of IoT for good.
+`
+  },
+  {
+    id: "day-22",
+    date: "Day 22",
+    title: "Analyzing the Projects",
+    category: "Analysis & Review",
+    content: `
+**Phase 03 · Review & Reflection**
+
+A reflective day spent dissecting the completed projects — what worked, what was fragile, and how each could be made more reliable. Analysis is where good engineers level up.
+
+## What to Analyze
+- **Logic:** Does the code handle edge cases? Any blocking \`delay()\` that should be non-blocking?
+- **Hardware:** Correct pull-ups, debouncing, power budget, and protection for inductive loads.
+- **Reliability:** Noise filtering, calibration drift, and behaviour when a sensor disconnects.
+- **Scalability:** Could it talk to the cloud? Run on battery? Handle more sensors?
+`
+  },
+  {
+    id: "day-23",
+    date: "Day 23",
+    title: "4 Sensors & 4 Actuators",
+    category: "Hands-on Practical",
+    content: `
+**Phase 03 · Hands-on Practical**
+
+## Four Sensors
+| Sensor | Reads | Output |
+|--------|-------|--------|
+| DHT11 | Temperature & humidity | Digital |
+| HC-SR04 | Distance (ultrasonic) | Echo timing |
+| LDR | Light intensity | Analog |
+| IR sensor | Object / obstacle | Digital |
+
+## Four Actuators
+| Actuator | Does | Driven by |
+|----------|------|-----------|
+| LED | Light / status | digitalWrite / PWM |
+| Buzzer | Sound alert | tone() / digitalWrite |
+| Servo motor | Precise angle | Servo.write(angle) |
+| DC motor | Rotation | Transistor / driver + PWM |
+
+The core IoT loop: a sensor reads the world, the Arduino decides in code, and an actuator changes something physical.
+`
+  },
+  {
+    id: "day-24",
+    date: "Day 24",
+    title: "Introduction to Wokwi & Simple Projects",
+    category: "Simulation",
+    content: `
+**Phase 03 · Simulation**
+
+## What is Wokwi?
+An online Arduino / ESP32 simulator — wire up virtual components in the browser, write code, and run it instantly with no physical board needed. Perfect for prototyping and testing logic before touching real hardware.
+
+## Why Simulate First
+- No risk of frying components
+- Instant wiring changes
+- Share projects via a link
+- Test code anywhere
+- Great for learning before buying parts
+
+## Simple Projects Built
+- Blink & fade an LED with PWM
+- Read a potentiometer and print to the virtual Serial Monitor
+- Button-controlled LED with debouncing
+- LCD "Hello, World" with a simulated 16×2 display
+`
+  },
+  {
+    id: "day-25",
+    date: "Day 25",
+    title: "AWS, ThingSpeak & Quiz",
+    category: "Cloud & Assessment",
+    content: `
+**Phase 03 · Cloud + Assessment**
+
+Brought the loop full circle — pushing real sensor data up to the cloud so it can be stored, charted, and accessed from anywhere.
+
+## ThingSpeak — IoT Made Simple
+Create a channel with fields for each sensor → an ESP/Arduino sends values via an HTTP / MQTT write API key → ThingSpeak logs & graphs the data live, with built-in analytics and alerts.
+
+## AWS Recap
+Refreshed the core IoT-relevant services — EC2 (servers), S3 (storage), IoT Core (device connectivity via MQTT), and Lambda (serverless logic) — and where ThingSpeak fits as a quick, beginner-friendly alternative.
+
+Wrapped up the phase with an assessment covering electronics, embedded systems, networking, Arduino, and cloud.
+`
   }
 ];
