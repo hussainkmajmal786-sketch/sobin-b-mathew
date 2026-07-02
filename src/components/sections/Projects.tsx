@@ -11,6 +11,12 @@ const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 const projects = [
   {
+    title: "Wireless Screen Casting System",
+    description: "PM VIKAS Phase 04 capstone — a Raspberry Pi powered receiver that lets a lecturer cast their screen, video and audio, from any device straight to the projector, completely wirelessly. Plug the Pi into the projector's HDMI and any phone, tablet, or laptop on the same network can cast to it. Device-agnostic and a low-cost retrofit for existing projectors.",
+    stack: ["Raspberry Pi", "Wi-Fi Casting", "HDMI", "Linux"],
+    image: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=2070&auto=format&fit=crop",
+  },
+  {
     title: "Smart Home Automation",
     description: "Control home appliances securely from anywhere using IoT architectures and real-time cloud connectivity. Features include remote scheduling, energy usage analytics, and voice assistant integration.",
     stack: ["ESP32", "MQTT", "React", "Node.js"],
