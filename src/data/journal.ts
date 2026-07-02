@@ -596,5 +596,115 @@ Refreshed the core IoT-relevant services — EC2 (servers), S3 (storage), IoT Co
 
 Wrapped up the phase with an assessment covering electronics, embedded systems, networking, Arduino, and cloud.
 `
+  },
+  {
+    id: "day-26",
+    date: "Day 26",
+    title: "ESP32 — Study",
+    category: "ESP32",
+    content: `
+**Phase 04 · New Hardware**
+
+The ESP32 is a low-cost, low-power microcontroller with built-in Wi-Fi and Bluetooth — essentially an Arduino with internet connectivity, making it ideal for IoT applications that need cloud communication without extra modules.
+
+## ESP32 vs Arduino Uno
+| Feature | Arduino Uno | ESP32 |
+|---------|-------------|-------|
+| Core | 8-bit, 16 MHz | 32-bit dual-core, up to 240 MHz |
+| Connectivity | None | Built-in Wi-Fi + Bluetooth |
+| Memory | 32 KB Flash / 2 KB RAM | ~4 MB Flash / 520 KB RAM |
+| ADC pins | 6 | 18 |
+
+The ESP32's integrated Wi-Fi enables direct sensor data transmission to cloud platforms like ThingSpeak or AWS — a natural progression from Arduino-based projects.
+`
+  },
+  {
+    id: "day-27",
+    date: "Day 27",
+    title: "ESP32 — Simulation & Working With It",
+    category: "ESP32",
+    content: `
+**Phase 04 · Hands-on**
+
+Simulated ESP32 code via Wokwi without physical hardware, including simulated Wi-Fi for testing cloud-connected sketches.
+
+## Practical Applications
+- Connecting to Wi-Fi using the \`WiFi.h\` library
+- Reading sensors with identical Arduino methodology
+- Hosting a web server for browser-based LED control
+- Transmitting sensor readings to ThingSpeak over Wi-Fi
+
+## Wi-Fi Connection Setup
+\`\`\`cpp
+WiFi.begin("SSID", "PASSWORD");
+while (WiFi.status() != WL_CONNECTED) {
+  delay(500);
+}
+\`\`\`
+`
+  },
+  {
+    id: "day-28",
+    date: "Day 28",
+    title: "Raspberry Pi — Explained",
+    category: "Raspberry Pi",
+    content: `
+**Phase 04 · Single-Board Computer**
+
+The Raspberry Pi is a credit-card-sized single-board computer that runs a full Linux OS. Unlike Arduino/ESP32 microcontrollers, the Pi executes complete operating systems and supports languages like Python.
+
+## Microcontroller vs Single-Board Computer
+| | Arduino / ESP32 | Raspberry Pi |
+|---|-----------------|--------------|
+| OS | None | Runs Linux |
+| Focus | Real-time control | Heavy processing / networking |
+| Language | C / C++ | Python-compatible |
+| Power | Minimal | Higher demand |
+
+An integrated IoT architecture: ESP32 sensor nodes send data to a Raspberry Pi gateway, which processes it locally (edge computing) and forwards summaries to the cloud.
+`
+  },
+  {
+    id: "day-29",
+    date: "Day 29",
+    title: "Mini-Project Discussion & Architecture Planning",
+    category: "Team Design",
+    content: `
+**Phase 04 · Team Design**
+
+The team brainstormed project concepts, evaluated feasibility, and finalized direction before designing the complete system architecture ahead of implementation.
+
+## Architecture Components
+- **Sensing Layer:** sensor selection, placement, measurement parameters
+- **Processing:** assignment of logic to Arduino / ESP32 / Pi
+- **Connectivity:** Wi-Fi, MQTT/HTTP, cloud data routing
+- **Output/UI:** dashboards, alerts, user-facing actuators
+
+Tasks were distributed across the team — hardware/wiring, firmware, cloud infrastructure, and documentation — enabling parallel progress with clear ownership.
+`
+  },
+  {
+    id: "day-30",
+    date: "Day 30",
+    title: "Full Build & Testing — Build–Measure–Learn",
+    category: "Product Development",
+    content: `
+**Phase 04 · Product Development**
+
+Final implementation session executing the full mini-project: hardware assembly, firmware deployment, and comprehensive testing using the **Build → Measure → Learn** iterative framework.
+
+## The Build–Measure–Learn Loop
+- **Build:** assemble hardware and firmware into a working prototype
+- **Measure:** test with actual inputs and collect performance data
+- **Learn:** compare outcomes against objectives, identify deficiencies, iterate
+
+## Testing Checklist
+- Sensor accuracy verification
+- Actuator response validation
+- Cloud data reliability
+- Edge-case and power-loss behaviour
+
+The programme concludes after **30 sessions, 20 shipped Arduino builds, and a full team-built IoT product** — from resistor colour codes on Day 1 to a working Build–Measure–Learn prototype on Day 30.
+`
   }
 ];
